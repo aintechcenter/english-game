@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 영어카드 매칭 게임 - Kids English Card Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎮 영어카드 매칭 게임 🎮</h1>
+        <p>같은 영어 단어 카드를 찾아보세요!</p>
+    </header>
+
+    <main>
+        <div class="game-info">
+            <div class="score">
+                <span>점수: <span id="score">0</span></span>
+            </div>
+            <div class="timer">
+                <span>시간: <span id="timer">60</span>초</span>
+            </div>
+            <div class="matches">
+                <span>맞춘 개수: <span id="matches">0</span>/8</span>
+            </div>
+        </div>
+
+        <div class="game-controls">
+            <button id="start-btn" class="btn-primary">🚀 게임 시작</button>
+            <button id="reset-btn" class="btn-secondary">🔄 다시 시작</button>
+            <button id="hint-btn" class="btn-hint">💡 힌트</button>
+        </div>
+
+        <div id="game-board" class="game-board">
+            <!-- 카드들이 JavaScript로 생성됩니다 -->
+        </div>
+
+        <div id="game-over" class="game-over hidden">
+            <div class="game-over-content">
+                <h2 id="game-result">🎉 게임 완료!</h2>
+                <p id="final-score">최종 점수: 0점</p>
+                <p id="time-taken">걸린 시간: 0초</p>
+                <button id="play-again-btn" class="btn-primary">🎮 다시 하기</button>
+            </div>
+        </div>
+
+        <div id="victory-animation" class="victory-animation hidden">
+            <div class="confetti">🎉</div>
+            <div class="confetti">🎊</div>
+            <div class="confetti">⭐</div>
+            <div class="confetti">🌟</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>🌟 재미있게 영어를 배워요! 🌟</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
