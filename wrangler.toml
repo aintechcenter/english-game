@@ -1,8 +1,0 @@
-name = "english-card-game"
-compatibility_date = "2025-06-19"
-
-[assets]
-directory = "."
-
-[[assets.bindings]]
-name = "ASSETS"
